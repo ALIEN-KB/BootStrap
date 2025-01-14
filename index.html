@@ -179,7 +179,13 @@
             <use xlink:href="#bootstrap"></use>
           </svg>
         </a>
-        <p class="text-body-secondary">© 2023</p>
+
+        <p class="text-body-secondary">© <span id="year"></span></p>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
       </div>
 
       <div class="col mb-3">
